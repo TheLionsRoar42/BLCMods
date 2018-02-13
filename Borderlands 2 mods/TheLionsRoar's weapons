@@ -1,0 +1,158 @@
+
+   my english isn't that good so sorry for misunderstanding
+   
+    
+    9 Weapons will be affected by this 
+    
+    Sawbar, Hellfire, Infection, Madhouse, carnage,longbow, heartbreaker and blockhead
+    
+    Sawbar: Shoots E-tech Splatgun bullets, and got an increase elemental effect chance and damage.
+    
+    Hellfire: Makes mini fire nova shield explosions, got the aquamarine skin and a new barrel.
+    
+    Infection: Got the same effect as hellfire, but more stable and more status effect damage.
+    
+    Madhouse: Got  tinderbox, little evie, teapot and pocket spalsh damage, But this effect only happens when hitting an enemy. (I think slag Madhouse is better than other variants) 
+    
+    Carnage: Change the rockets to E-tech Splatgun Bullets. (Maybe a little bit lame)
+    
+    Longbow: Got an increase to elemental effect chance and got a 2 bullets/arrows more (they are extremely precise)
+    
+    Heart breaker: got  an increase in Elemental effect chance heartbreaker and got a the gemstone skin for tediore SG
+    Blockhead: got  an increase in Elemental effect chance and Blockhead got a change to its barrel (Just cosmetic)
+    _______________________________________________________________________________________________________________________________
+    set GD_Sage_RaidWeapons.Name.Title.Sage_Seraph_Infection_Title PartName Outbreak
+
+    set GD_Sage_RaidWeapons.Name.Title.Sage_Seraph_Infection_Title:AttributePresentationDefinition_8 NoConstraintText minions let the outbreak begin
+
+    set GD_Sage_RaidWeapons.Pistol.Pistol_Barrel_Infection GestaltModeSkeletalMeshName Pistol_Barrel_Jakobs
+
+set GD_Sage_RaidWeapons.Pistol.Pistol_Barrel_Infection WeaponAttributeEffects ((AttributeToModify=AttributeDefinition'D_Attributes.Weapon.WeaponStatusEffectChanceModifier',ModifierType=MT_Scale,BaseModifierValue=(BaseValueConstant=0.500000,BaseValueAttribute=None,InitializationDefinition=None,BaseValueScaleConstant=35.000000)),(AttributeToModify=AttributeDefinition'D_Attributes.Weapon.WeaponDamage',ModifierType=MT_Scale,BaseModifierValue=(BaseValueConstant=-0.999000,BaseValueAttribute=None,InitializationDefinition=None,BaseValueScaleConstant=1.000000)),(AttributeToModify=AttributeDefinition'D_Attributes.Weapon.WeaponStatusEffectDamage',ModifierType=MT_Scale,BaseModifierValue=(BaseValueConstant=0.300000,BaseValueAttribute=None,InitializationDefinition=None,BaseValueScaleConstant=9.900000)))
+
+set GD_Sage_RaidWeapons.FiringModes.Bullet_Pistol_Maliwan_Infection:Behavior_Explode_5 Definition ExplosionDefinition'GD_Explosions.corrosive.Explosion_CorrosiveMaster_ShieldNova'
+
+set GD_Sage_RaidWeapons.FiringModes.Bullet_Pistol_Maliwan_Infection ExplosionOverideInstanceDataName None
+
+_____________________________________________________________________________________________________________________________________________________________________________
+
+ set GD_Gladiolus_Weapons.Name.Title.Title_Pearlescent_Sawbar PartName Draco
+
+    set GD_Gladiolus_Weapons.Name.Title.Title_Pearlescent_Sawbar:AttributePresentationDefinition_8 NoConstraintText Flyed for him when he needed it..
+
+    set GD_Gladiolus_Weapons.AssaultRifle.AR_Barrel_Jakobs_Sawbar GestaltModeSkeletalMeshName AR_Barrel_Dahl
+
+    set GD_Gladiolus_Weapons.FiringModes.Bullet_Assault_Sawbar BehaviorProviderDefinition None
+
+    set GD_Gladiolus_Weapons.AssaultRifle.AR_Barrel_Jakobs_Sawbar CustomFiringModeDefinition FiringModeDefinition'GD_Weap_Shotgun.FiringModes.Bullets_Splatgun'
+
+    set GD_Gladiolus_Weapons.AssaultRifle.AR_Barrel_Jakobs_Sawbar WeaponAttributeEffects ((AttributeToModify=AttributeDefinition'D_Attributes.Weapon.WeaponStatusEffectChanceModifier',ModifierType=MT_Scale,BaseModifierValue=(BaseValueConstant=0.500000,BaseValueAttribute=None,InitializationDefinition=None,BaseValueScaleConstant=35.000000)),(AttributeToModify=AttributeDefinition'D_Attributes.Weapon.WeaponStatusEffectDamage',ModifierType=MT_Scale,BaseModifierValue=(BaseValueConstant=1.111000,BaseValueAttribute=None,InitializationDefinition=None,BaseValueScaleConstant=1.100000)),(AttributeToModify=AttributeDefinition'D_Attributes.Weapon.WeaponFireInterval',ModifierType=MT_Scale,BaseModifierValue=(BaseValueConstant=0.100000,BaseValueAttribute=None,InitializationDefinition=None,BaseValueScaleConstant=0.500000)))
+
+_______________________________________________________________________________________________________________________________________________________________________________________
+
+    set GD_Weap_SMG.Name.Title_Maliwan.Title_Legendary_HellFire PartName Firestorm
+
+    set GD_Weap_SMG.Name.Title_Maliwan.Title_Legendary_HellFire:AttributePresentationDefinition_8 NoConstraintText Burn MY LUNATICS!!!
+
+    set GD_Weap_SMG.Barrel.SMG_Barrel_Maliwan_HellFire GestaltModeSkeletalMeshName SMG_Barrel_Hyperion
+
+    set GD_Weap_SMG.FiringModes.Bullet_SMG_HellFire:Behavior_Explode_5 Definition ExplosionDefinition'GD_Explosions.Incendiary.Explosion_IncendiaryMaster_ShieldNova'
+
+    set GD_Weap_SMG.FiringModes.Bullet_SMG_HellFire ExplosionOverideInstanceDataName None
+
+    set GD_Weap_SMG.ManufacturerMaterials.Mat_Maliwan_5_Legendary Material MaterialInstanceConstant 'Mati_Maliwan_Aquamarine_SMG'
+
+______________________________________________________________________________________________________________________________________________________________________________________
+
+    set GD_Weap_AssaultRifle.Name.Title_Bandit.Title_Legendary_Madhouse PartName Hydra
+
+    set GD_Weap_AssaultRifle.Name.Title_Bandit.Title_Legendary_Madhouse:AttributePresentationDefinition_8 NoConstraintText ALL DA ELEMTENTS!! BITCHES 
+
+
+set GD_Weap_AssaultRifle.Barrel.AR_Barrel_Bandit_Madhouse WeaponAttributeEffects
+
+((AttributeToModify=AttributeDefinition'D_Attributes.Weapon.WeaponDamage',ModifierType=MT_Scale,BaseModifierValue=(BaseValueConstant=0.989000,BaseValueAttribute=None,InitializationDefinition=None,BaseValueScaleConstant=4.000000)),(AttributeToModify=AttributeDefinition'D_Attributes.Weapon.WeaponReloadSpeed',ModifierType=MT_Scale,BaseModifierValue=(BaseValueConstant=0.000000,BaseValueAttribute=None,InitializationDefinition=None,BaseValueScaleConstant=0.000000)),((AttributeToModify=AttributeDefinition'D_Attributes.Weapon.WeaponStatusEffectChanceModifier',ModifierType=MT_Scale,BaseModifierValue=(BaseValueConstant=10.000000,BaseValueAttribute=None,InitializationDefinition=None,BaseValueScaleConstant=39.000000)))
+    -- Behavior --
+set GD_Weap_AssaultRifle.FiringModes.Bullet_Assault_Bandit_Madhouse RicochetResponse (SplitNum=0,SplitAngle=8.000000,SplitAngleOffset=15.000000,SplitDistance=0.000000,SplitFire=FiringModeDefinition'GD_Weap_AssaultRifle.FiringModes.Bullet_Assault_Bandit_Madhouse_Child',NewSpeed=0.000000,bDetonate=True,bRespawnTracer=False,bUpdateBeamSourceLocation=False,Behaviors=)
+
+                set GD_Weap_AssaultRifle.FiringModes.Bullet_Assault_Bandit_Madhouse BasePatternSpread 7.000000
+set GD_Weap_AssaultRifle.FiringModes.Bullet_Assault_Bandit_Madhouse DamageTypeDefinition WillowDamageTypeDefinition'GD_Impact.DamageType.DmgType_Explosive'
+set GD_Weap_AssaultRifle.FiringModes.Bullet_Assault_Bandit_Madhouse OnAnyImpact (Behavior_Explode'GD_Weap_Pistol.FiringModes.Bullets_Pistol_Bandit_Tinderbox:Behavior_Explode_5',Behavior_Explode'GD_Orchid_BossWeapons.FiringModes.Bullet_Pistol_Maliwan_Evie:Behavior_Explode_5',Behavior_Explode'GD_Weap_Pistol.FiringModes.Bullet_Pistol_Dahl_Teapot:Behavior_Explode_5',Behavior_Explode'GD_Iris_Weapons.FiringModes.Bullets_Pistol_Torgue_PocketRocket:Behavior_Explode_5')
+
+-- Tinderbox Splash --
+
+set GD_Weap_Pistol.FiringModes.Bullets_Pistol_Bandit_Tinderbox:Behavior_Explode_5 DamageSource Class'WillowGame.WillowDmgSource_Grenade'
+set GD_Weap_Pistol.FiringModes.Bullets_Pistol_Bandit_Tinderbox:Behavior_Explode_5 Definition ExplosionDefinition'GD_Explosions.Incendiary.Explosion_IncendiaryMaster'
+set GD_Weap_Pistol.FiringModes.Bullets_Pistol_Bandit_Tinderbox:Behavior_Explode_5 DamageFormula (BaseValueConstant=0.000000,BaseValueAttribute=AttributeDefinition'D_Attributes.Weapon.WeaponDamage',InitializationDefinition=None,BaseValueScaleConstant=0.500000)
+set GD_Weap_Pistol.FiringModes.Bullets_Pistol_Bandit_Tinderbox:Behavior_Explode_5 StatusEffectDamage (BaseValueConstant=1.000000,BaseValueAttribute=AttributeDefinition'D_Attributes.Weapon.WeaponStatusEffectDamage',InitializationDefinition=None,BaseValueScaleConstant=1.400000)
+set GD_Weap_Pistol.FiringModes.Bullets_Pistol_Bandit_Tinderbox:Behavior_Explode_5 DamageRadiusFormula (BaseValueConstant=110.000000,BaseValueAttribute=None,InitializationDefinition=None,BaseValueScaleConstant=2.000000)
+
+-- Little Evie Splash --
+
+set GD_Orchid_BossWeapons.FiringModes.Bullet_Pistol_Maliwan_Evie:Behavior_Explode_5 DamageSource Class'WillowGame.WillowDmgSource_Grenade'
+set GD_Orchid_BossWeapons.FiringModes.Bullet_Pistol_Maliwan_Evie:Behavior_Explode_5 Definition ExplosionDefinition'GD_Explosions.shock.Explosion_ShockMaster'
+set GD_Orchid_BossWeapons.FiringModes.Bullet_Pistol_Maliwan_Evie:Behavior_Explode_5 DamageRadiusFormula (BaseValueConstant=110.000000,BaseValueAttribute=None,InitializationDefinition=None,BaseValueScaleConstant=2.000000)
+set GD_Orchid_BossWeapons.FiringModes.Bullet_Pistol_Maliwan_Evie:Behavior_Explode_5 DamageFormula (BaseValueConstant=0.000000,BaseValueAttribute=AttributeDefinition'D_Attributes.Weapon.WeaponDamage',InitializationDefinition=None,BaseValueScaleConstant=0.500000)
+set GD_Orchid_BossWeapons.FiringModes.Bullet_Pistol_Maliwan_Evie:Behavior_Explode_5 StatusEffectDamage (BaseValueConstant=1.000000,BaseValueAttribute=AttributeDefinition'D_Attributes.Weapon.WeaponStatusEffectDamage',InitializationDefinition=None,BaseValueScaleConstant=1.400000)
+
+-- Teapot Splash --
+
+set GD_Weap_Pistol.FiringModes.Bullet_Pistol_Dahl_Teapot:Behavior_Explode_5 DamageSource Class'WillowGame.WillowDmgSource_Grenade'
+set GD_Weap_Pistol.FiringModes.Bullet_Pistol_Dahl_Teapot:Behavior_Explode_5 Definition ExplosionDefinition'GD_Explosions.corrosive.Explosion_CorrosiveMaster'
+set GD_Weap_Pistol.FiringModes.Bullet_Pistol_Dahl_Teapot:Behavior_Explode_5 DamageRadiusFormula (BaseValueConstant=110.000000,BaseValueAttribute=None,InitializationDefinition=None,BaseValueScaleConstant=2.000000)
+set GD_Weap_Pistol.FiringModes.Bullet_Pistol_Dahl_Teapot:Behavior_Explode_5 DamageFormula (BaseValueConstant=0.000000,BaseValueAttribute=AttributeDefinition'D_Attributes.Weapon.WeaponDamage',InitializationDefinition=None,BaseValueScaleConstant=0.500000)
+set GD_Weap_Pistol.FiringModes.Bullet_Pistol_Dahl_Teapot:Behavior_Explode_5 StatusEffectDamage (BaseValueConstant=1.000000,BaseValueAttribute=AttributeDefinition'D_Attributes.Weapon.WeaponStatusEffectDamage',InitializationDefinition=None,BaseValueScaleConstant=1.400000)
+
+
+-- Pocket rocket splash --
+
+set GD_Iris_Weapons.FiringModes.Bullets_Pistol_Torgue_PocketRocket:Behavior_Explode_5 DamageSource Class'WillowGame.WillowDmgSource_Grenade'
+set GD_Iris_Weapons.FiringModes.Bullets_Pistol_Torgue_PocketRocket:Behavior_Explode_5 Definition ExplosionDefinition'GD_Explosions.explosive.Explosion_ExplosiveMaster
+set GD_Iris_Weapons.FiringModes.Bullets_Pistol_Torgue_PocketRocket:Behavior_Explode_5  DamageRadiusFormula (BaseValueConstant=110.000000,BaseValueAttribute=None,InitializationDefinition=None,BaseValueScaleConstant=2.000000)
+set GD_Weap_Pistol.FiringModes.Bullet_Pistol_Dahl_Teapot:Behavior_Explode_5 DamageFormula (BaseValueConstant=0.000000,BaseValueAttribute=AttributeDefinition'D_Attributes.Weapon.WeaponDamage',InitializationDefinition=None,BaseValueScaleConstant=0.500000)
+set GD_Weap_Pistol.FiringModes.Bullet_Pistol_Dahl_Teapot:Behavior_Explode_5 StatusEffectDamage (BaseValueConstant=1.000000,BaseValueAttribute=AttributeDefinition'D_Attributes.Weapon.WeaponStatusEffectDamage',InitializationDefinition=None,BaseValueScaleConstant=1.400000)
+
+__________________________________________________________________________________________________________________________________________________________________________________________
+    set GD_Lobelia_Weapons.Name.Title.Title_Pearlescent_Carnage PartName Obsidian
+
+    set GD_Lobelia_Weapons.Name.Title.Title_Pearlescent_Carnage:AttributePresentationDefinition_8 NoConstraintText Are you fucking serious?
+
+    set GD_Lobelia_Weapons.Shotguns.SG_Barrel_Torgue_Carnage CustomFiringModeDefinition FiringModeDefinition'GD_Weap_Shotgun.FiringModes.Bullets_Splatgun'
+
+______________________________________________________________________________________________________________________________________________________________________________________________
+
+  set GD_Orchid_RaidWeapons.AssaultRifle.Seraphim.Orchid_Seraph_Seraphim_Title PartName Ashstorm
+
+  set GD_Orchid_RaidWeapons.AssaultRifle.Seraphim.Orchid_Seraph_Seraphim_Title:AttributePresentationDefinition_8 NoConstraintText Ashes to ashes
+  
+  set GD_Orchid_RaidWeapons.AssaultRifle.Seraphim.Orchid_Seraph_Seraphim_Barrel CustomFiringModeDefinition FiringModeDefinition'GD_Weap_SniperRifles.FiringModes.Bullet_Sniper_Longbow'
+
+set GD_Orchid_RaidWeapons.AssaultRifle.Seraphim.Orchid_Seraph_Seraphim_Barrel WeaponAttributeEffects ((AttributeToModify=AttributeDefinition'D_Attributes.Weapon.WeaponStatusEffectChanceModifier',ModifierType=MT_Scale,BaseModifierValue=(BaseValueConstant=0.500000,BaseValueAttribute=None,InitializationDefinition=None,BaseValueScaleConstant=35.000000)),(AttributeToModify=AttributeDefinition'D_Attributes.Weapon.WeaponStatusEffectDamage',ModifierType=MT_Scale,BaseModifierValue=(BaseValueConstant=0.300000,BaseValueAttribute=None,InitializationDefinition=None,BaseValueScaleConstant=2.990000)),(AttributeToModify=AttributeDefinition'D_Attributes.Weapon.WeaponProjectilesPerShot',ModifierType=MT_PreAdd,BaseModifierValue=(BaseValueConstant=1.000000,BaseValueAttribute=None,InitializationDefinition=None,BaseValueScaleConstant=3.000000)),(AttributeToModify=AttributeDefinition'D_Attributes.Weapon.WeaponFireInterval',ModifierType=MT_Scale,BaseModifierValue=(BaseValueConstant=0.900000,BaseValueAttribute=None,InitializationDefinition=None,BaseValueScaleConstant=0.900000)))
+
+________________________________________________________________________________________________________________________________________________________________________
+heartbreaker
+set GD_Weap_Shotgun.Name.Title.Title__Unique_HeartBreaker PartName Ashmaker
+set GD_Weap_Shotgun.Name.Title.Title__Unique_HeartBreaker:AttributePresentationDefinition_8 NoConstraintText Made by Maliwan BUT HYPERION TOOK IT!!!
+set GD_Weap_Shotgun.Barrel.SG_Barrel_Hyperion_HeartBreaker WeaponAttributeEffects ((AttributeToModify=AttributeDefinition'D_Attributes.Weapon.WeaponStatusEffectChanceModifier',ModifierType=MT_Scale,BaseModifierValue=(BaseValueConstant=0.500000,BaseValueAttribute=None,InitializationDefinition=None,BaseValueScaleConstant=5.000000)))
+ set GD_Weap_Shotgun.ManufacturerMaterials.Mat_Hyperion_3_HeartBreaker Material MaterialInstanceConstant 'Mati_Tediore_CubicZerconia_SG
+_______________________________________________________________________________________________________________________________________
+
+longbow
+set GD_Weap_SniperRifles.Name.Title.Title__Unique_Longbow PartName Crossbow
+set GD_Weap_SniperRifles.Name.Title.Title__Unique_Longbow:AttributePresentationDefinition_8 NoConstraintText 3 Three Arrows at once!
+set GD_Weap_SniperRifles.Barrel.SR_Barrel_Alien_Longbow WeaponAttributeEffects ((AttributeToModify=AttributeDefinition'D_Attributes.Weapon.WeaponStatusEffectChanceModifier',ModifierType=MT_Scale,BaseModifierValue=(BaseValueConstant=0.500000,BaseValueAttribute=None,InitializationDefinition=None,BaseValueScaleConstant=4.000000)),(AttributeToModify=AttributeDefinition'D_Attributes.Weapon.WeaponProjectilesPerShot',ModifierType=MT_PreAdd,BaseModifierValue=(BaseValueConstant=1.000000,BaseValueAttribute=None,InitializationDefinition=None,BaseValueScaleConstant=2.000000)))
+
+___________________________________________________________________________________________________________________________________________________
+
+Blockhead
+
+    set GD_Weap_Shotgun.Barrel.SG_Barrel_Tediore_Blockhead GestaltModeSkeletalMeshName SG_Barrel_Hyperion
+
+    set GD_Weap_Shotgun.Name.Title.Title__Unique_Blockhead:AttributePresentationDefinition_8 NoConstraintText BLOCKS OF FIRE DO YOU UNDERSTAND??
+
+    set GD_Weap_Shotgun.Name.Title.Title__Unique_Blockhead PartName Blocks Of Fire
+ set GD_Weap_Shotgun.Barrel.SG_Barrel_Tediore_Blockhead WeaponAttributeEffects ((AttributeToModify=AttributeDefinition'D_Attributes.Weapon.WeaponStatusEffectChanceModifier',ModifierType=MT_Scale,BaseModifierValue=(BaseValueConstant=0.500000,BaseValueAttribute=None,InitializationDefinition=None,BaseValueScaleConstant=4.000000)))
+
+
+
+
+
